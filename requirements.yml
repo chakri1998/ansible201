@@ -1,0 +1,6 @@
+- src: ansistrano.deploy
+  version: latest
+
+- src: ansistrano.rollback
+  version: latest
+
