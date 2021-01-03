@@ -1,7 +1,7 @@
 galaxy_info:
-  author: your name
-  description: your role description
-  company: your company (optional)
+  author: DEVARAKONDA CHAKRADHAR
+  description: Change the password for user account, Create and configure a deploy user account, Configure Public Key Authentication for the deploy Account, Add deploy user to sudoers, run updates and upgrades, use "ufw" for iptables configuration, allow only "ssh" traffic, configure "postfix" to relay daily summary email with "debconf" module, customize the ssh_port variable, disable ssh for root account.
+  company: HAMARA GROUP
 
   # If the issue tracker for your role is not on github, uncomment the
   # next line and provide a value
@@ -27,10 +27,10 @@ galaxy_info:
   # To view available platforms and versions (or releases), visit:
   # https://galaxy.ansible.com/api/v1/platforms/
   #
-  # platforms:
-  # - name: Fedora
-  #   versions:
-  #   - all
+  platforms:
+  - name: Ubuntu
+    versions:
+    - all
   #   - 25
   # - name: SomePlatform
   #   versions:
