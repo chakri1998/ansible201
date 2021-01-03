@@ -5,8 +5,8 @@
 - name: replace default with current path
   replace:
     path: /etc/apache2/sites-available/000-default.conf
-    regexp: '^/var/www/html'
-    replace: '/var/www/html/current'
+    regexp: '/var/www/html'
+    replace: "/var/www/html/current"
 #  notify:
 #        - restart apache2
 

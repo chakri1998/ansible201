@@ -1,6 +1,4 @@
-- src: ansistrano.deploy
-  version: latest
+- name: ansistrano.deploy
 
-- src: ansistrano.rollback
-  version: latest
-
+- name: ansistrano.rollback
+  
