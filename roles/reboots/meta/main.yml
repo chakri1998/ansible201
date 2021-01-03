@@ -1,7 +1,7 @@
 galaxy_info:
-  author: your name
-  description: your role description
-  company: your company (optional)
+  author: DEVARAKONDA CHAKRADHAR
+  description: run preboot tasks, use "yum" for upgrades, use "command" module to "reboot" server, run "wait_for" module to wait for 300 seconds for port 22 to become available before resuming the playbook. the port number can be changed if its not open-ssh, resume playbook on response from port 22.
+  company: HAMARA GROUP.
 
   # If the issue tracker for your role is not on github, uncomment the
   # next line and provide a value
@@ -27,10 +27,10 @@ galaxy_info:
   # To view available platforms and versions (or releases), visit:
   # https://galaxy.ansible.com/api/v1/platforms/
   #
-  # platforms:
-  # - name: Fedora
-  #   versions:
-  #   - all
+  platforms:
+  - name: Amazon
+    versions:
+    - all
   #   - 25
   # - name: SomePlatform
   #   versions:
@@ -47,7 +47,8 @@ galaxy_info:
     # NOTE: A tag is limited to a single word comprised of alphanumeric characters.
     #       Maximum 20 tags per role.
 
-dependencies: []
+dependencies:
+  
   # List your role dependencies here, one per line. Be sure to remove the '[]' above,
   # if you add dependencies to this list.
   
