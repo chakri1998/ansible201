@@ -11,7 +11,7 @@
       - devarakondachakradhar1998@gmail.com
       - akyhcs@gmail.com
       - devarakondachakradhar1998@gmail.com
-
+     
     ubuntu_common_deploy_user_name: deploy
     ubuntu_common_deploy_public_keys:
       - ssh/anand.pub
@@ -21,7 +21,7 @@
       - fail2ban
       - unattended-upgrades
       - logwatch
-
+      - mailutils
     ubuntu_common_optional_packages:
       - mosh
       - vim
