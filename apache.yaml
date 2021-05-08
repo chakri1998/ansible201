@@ -2,11 +2,16 @@
 - name: install apache2
   apt: name=apache2 update_cache=yes state=latest
 
+# - name: replace default with current path
+#   replace:
+#     path: /etc/apache2/sites-available/000-default.conf
+#     regexp: '/var/www/html'
+#     replace: "/var/www/html/current"
+    
 - name: replace default with current path
-  replace:
-    path: /etc/apache2/sites-available/000-default.conf
-    regexp: '/var/www/html'
-    replace: "/var/www/html/current"
+  shell: if [[ $(grep '/var/www/html/current' /etc/apache2/sites-available/000-default.conf == '' ]]; then echo $(sed -i 's/\/var\/www\/html/\/var\/www\/html\/current/g' /etc/apache2/sites-available/000-default.conf) ; fi
+  args:
+    executable: /bin/bash
 #  notify:
 #        - restart apache2
 
